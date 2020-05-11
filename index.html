@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>國稅局活動</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <nav class="navbar navbar-expand-md fixed-top navbar-top">
+        <a class="navbar-brand ml-5" href="#">
+          <img src="./img/headerImg.png" height="40" alt="" />
+        </a>
+        <button
+          class="navbar-toggler hambur"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">☰</span>
+        </button>
+        <div
+          class="navbar-collapse collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <li><a class="nav-link mr-3" href="#sectiom_info">活動介紹</a></li>
+            <li><a class="nav-link mr-3" href="">闖關</a></li>
+          </div>
+        </div>
+      </nav>
+      <header id="jumbotron">
+        <img src="./img/main.jpg" alt="" />
+      </header>
+      <section id="sectiom_info">
+        <!-- <div class="container"> -->
+          <div class="row">
+            <div class="col-3">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">活動辦法</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">活動時間</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  <p>一、一般民眾皆可參與</p>
+                  <hr>
+                  <p>二、活動分為三梯次，每梯次皆有【廉政】、【稅務】類短片各一支，觀看完各梯次影片後即可進入該梯次答題區答題</p>
+                  <hr>
+                  <p>三、答題正確即可獲得該梯次抽獎資格一次，每人每一梯次僅限一次抽獎機會，第二、第三梯次以此類推；故每人最多有三次抽獎機會，不同梯次不會跨梯次抽獎</p>
+                  <hr>
+                  <p>四、資料登入須填寫姓名、居住地、身份證字號、手機號碼、email帳號，以利聯繫及確認身分不重複，中獎者於領獎時所提供的資料需與此相同</p>
+                  <hr>
+                  <p>五、承上，若遇資料不相同、填寫不完整或錯誤，造成執行單位無法判斷、聯繫、確認身分時，一概以棄權論</p>
+                  <hr>
+                  <p>六、主辦單位保有隨時修改及終止本活動之權利</p>
+                  <hr>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+              </div>
+            </div>
+          </div>
+          </div>
+        <!-- </div> -->
+      </section>
+    </div>
+  </body>
+  <script type="text/javascript" src="./js/vue.js"></script>
+</html>
