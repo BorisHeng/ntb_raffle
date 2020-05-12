@@ -51,11 +51,11 @@ section {
 
 section#sectiom_info {
   background-color: $color_main;
-  .row {
+  .row.form {
     padding: 20px;
     // border: 2px solid $color_font;
     // border-radius: 20px;
-    height: 500px;
+    min-height: 600px;
     .col-3 {
       padding-right: 0;
       #v-pills-tab {
@@ -73,16 +73,80 @@ section#sectiom_info {
         }
       }
     }
-    .col-8 {
+    .col-8.form {
       border: 5px solid $color_font;
-      border-radius: 0 20px 20px 20px;
+      border-radius: 20px;
       padding: 30px;
       font-size: 16px;
-      font-weight: 900;
+      font-weight: 600;
       color: $color_font;
+      .row {
+        border-bottom: solid 1px $color_hr;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .td {
+          font-weight: 900;
+          text-align: center;
+          letter-spacing: 5px;
+          background-color: $color_font;
+          color: white;
+        }
+        .col-2 {
+          border-left: solid 1px $color_hr;
+          text-align: center;
+        }
+      }
       hr {
         border: solid 1px $color_hr;
       }
+    }
+  }
+}
+
+section#sectiom_mv {
+  background-color: $color_font;
+  // height: 500px;
+  hr {
+    border: solid 1px $color_hr;
+  }
+  .row {
+    &.text {
+      display: flex;
+      justify-content: center;
+      color: $color_main;
+      font-weight: 900;
+      h3 {
+        padding-top: 20px;
+        padding-bottom: 50px;
+      }
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+      iframe,
+      object,
+      embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+section#footer {
+  background-color: $color_hr;
+  .container {
+    display: flex;
+    justify-content: center;
+    i {
+      color: $color_font;
+      font-size: 50px;
     }
   }
 }

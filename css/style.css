@@ -59,16 +59,16 @@ section#sectiom_info {
   background-color: #faf4ff;
 }
 
-section#sectiom_info .row {
+section#sectiom_info .row.form {
   padding: 20px;
-  height: 500px;
+  min-height: 600px;
 }
 
-section#sectiom_info .row .col-3 {
+section#sectiom_info .row.form .col-3 {
   padding-right: 0;
 }
 
-section#sectiom_info .row .col-3 #v-pills-tab a {
+section#sectiom_info .row.form .col-3 #v-pills-tab a {
   color: #bb3b0e;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -78,20 +78,99 @@ section#sectiom_info .row .col-3 #v-pills-tab a {
   font-weight: 800;
 }
 
-section#sectiom_info .row .col-3 #v-pills-tab a.active {
+section#sectiom_info .row.form .col-3 #v-pills-tab a.active {
   background-color: #bb3b0e !important;
   color: white;
 }
 
-section#sectiom_info .row .col-8 {
+section#sectiom_info .row.form .col-8.form {
   border: 5px solid #bb3b0e;
-  border-radius: 0 20px 20px 20px;
+  border-radius: 20px;
   padding: 30px;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 600;
   color: #bb3b0e;
 }
 
-section#sectiom_info .row .col-8 hr {
+section#sectiom_info .row.form .col-8.form .row {
+  border-bottom: solid 1px #f3c623;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+section#sectiom_info .row.form .col-8.form .row .td {
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 5px;
+  background-color: #bb3b0e;
+  color: white;
+}
+
+section#sectiom_info .row.form .col-8.form .row .col-2 {
+  border-left: solid 1px #f3c623;
+  text-align: center;
+}
+
+section#sectiom_info .row.form .col-8.form hr {
   border: solid 1px #f3c623;
+}
+
+section#sectiom_mv {
+  background-color: #bb3b0e;
+}
+
+section#sectiom_mv hr {
+  border: solid 1px #f3c623;
+}
+
+section#sectiom_mv .row.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #faf4ff;
+  font-weight: 900;
+}
+
+section#sectiom_mv .row.text h3 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+section#sectiom_mv .row .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+section#sectiom_mv .row .video-container iframe,
+section#sectiom_mv .row .video-container object,
+section#sectiom_mv .row .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section#footer {
+  background-color: #f3c623;
+}
+
+section#footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#footer .container i {
+  color: #bb3b0e;
+  font-size: 50px;
 }

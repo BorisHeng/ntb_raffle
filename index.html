@@ -15,10 +15,9 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
       integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -29,13 +28,14 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/b8bed8677a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
 
   <body>
     <div id="app">
       <nav class="navbar navbar-expand-md fixed-top navbar-top">
-        <a class="navbar-brand ml-5" href="#">
+        <a class="navbar-brand ml-5" href="#jumbotron">
           <img src="./img/headerImg.png" height="40" alt="" />
         </a>
         <button
@@ -55,7 +55,7 @@
         >
           <div class="navbar-nav">
             <li><a class="nav-link mr-3" href="#sectiom_info">活動介紹</a></li>
-            <li><a class="nav-link mr-3" href="">闖關</a></li>
+            <li><a class="nav-link mr-3" href="#sectiom_mv">我要挑戰</a></li>
           </div>
         </div>
       </nav>
@@ -64,18 +64,20 @@
       </header>
       <section id="sectiom_info">
         <!-- <div class="container"> -->
-          <div class="row">
+          <div class="row form">
             <div class="col-3">
               <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <br>
                 <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">活動辦法</a>
-                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">活動時間</a>
-                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">第一梯次</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">第二梯次</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">第三梯次</a>
               </div>
             </div>
-            <div class="col-8">
+            <div class="col-8 form">
               <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  <br>
                   <p>一、一般民眾皆可參與</p>
                   <hr>
                   <p>二、活動分為三梯次，每梯次皆有【廉政】、【稅務】類短片各一支，觀看完各梯次影片後即可進入該梯次答題區答題</p>
@@ -89,14 +91,175 @@
                   <p>六、主辦單位保有隨時修改及終止本活動之權利</p>
                   <hr>
                 </div>
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                  <h3>第一梯次(6/19~7/10)</h3>
+                  <br>
+                  <div class="row">
+                    <div class="col-8 td">獎項內容</div>
+                    <div class="col-2 td">市價</div>
+                    <div class="col-2 td">名額</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【頭獎】SAMPO路徑導航掃地機器人</div>
+                    <div class="col-2">12,900</div>
+                    <div class="col-2">1</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【二獎】Airpods 2nd</div>
+                    <div class="col-2">5,290</div>
+                    <div class="col-2">1</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【三獎】歐樂B 3D電動牙刷+專業美白刷頭</div>
+                    <div class="col-2">2,669</div>
+                    <div class="col-2">2</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【四獎】未來實驗室2L渦輪氣炸鍋</div>
+                    <div class="col-2">1,980</div>
+                    <div class="col-2">2</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【五獎】未來實驗室N6負離子空氣清淨機(二人組)</div>
+                    <div class="col-2">1,790</div>
+                    <div class="col-2">4</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【六獎】小米手環4</div>
+                    <div class="col-2">865</div>
+                    <div class="col-2">3</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【七獎】華納威秀電影票(2張)</div>
+                    <div class="col-2">560</div>
+                    <div class="col-2">3</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  <h3>第二梯次(7/3~7/24)</h3>
+                  <br>
+                  <div class="row">
+                    <div class="col-8 td">獎項內容</div>
+                    <div class="col-2 td">市價</div>
+                    <div class="col-2 td">名額</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【頭獎】ipad mini 5th WI-FI 64GB人</div>
+                    <div class="col-2">12,900</div>
+                    <div class="col-2">1</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【二獎】Switch Lite主-藍NS Lite</div>
+                    <div class="col-2">6,180</div>
+                    <div class="col-2">1</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【三獎】歐樂B 3D電動牙刷+專業美白刷頭</div>
+                    <div class="col-2">2,669</div>
+                    <div class="col-2">2</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【四獎】未來實驗室2L渦輪氣炸鍋</div>
+                    <div class="col-2">1,980</div>
+                    <div class="col-2">2</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【五獎】未來實驗室N6負離子空氣清淨機(二人組)</div>
+                    <div class="col-2">1,790</div>
+                    <div class="col-2">4</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【六獎】小米手環4</div>
+                    <div class="col-2">865</div>
+                    <div class="col-2">3</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【七獎】華納威秀電影票(2張)</div>
+                    <div class="col-2">560</div>
+                    <div class="col-2">3</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                  <h3>第三梯次(7/17~8/7)</h3>
+                  <br>
+                  <div class="row">
+                    <div class="col-8 td">獎項內容</div>
+                    <div class="col-2 td">市價</div>
+                    <div class="col-2 td">名額</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【頭獎】AW S5 GPS44 灰鋁/黑運動錶帶人</div>
+                    <div class="col-2">14,400</div>
+                    <div class="col-2">1</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【二獎】Switch Lite主-藍NS Lite</div>
+                    <div class="col-2">6,180</div>
+                    <div class="col-2">1</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【三獎】歐樂B 3D電動牙刷+專業美白刷頭</div>
+                    <div class="col-2">2,669</div>
+                    <div class="col-2">2</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【四獎】未來實驗室2L渦輪氣炸鍋</div>
+                    <div class="col-2">1,980</div>
+                    <div class="col-2">2</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【五獎】未來實驗室N6負離子空氣清淨機(二人組)</div>
+                    <div class="col-2">1,790</div>
+                    <div class="col-2">4</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【六獎】小米手環4</div>
+                    <div class="col-2">865</div>
+                    <div class="col-2">3</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">【七獎】華納威秀電影票(2張)</div>
+                    <div class="col-2">560</div>
+                    <div class="col-2">3</div>
+                  </div>
+                </div>
+                </div>
               </div>
             </div>
           </div>
           </div>
         <!-- </div> -->
+      </section>
+      <section id="sectiom_mv">
+        <div class="container">
+          <div class="row text">
+            <h1>第一梯次影片</h1>
+          </div>
+          <hr>
+          <div class="row text">
+            <h3>兩部影片觀賞後即可答題(暫定)</h3>
+          </div>
+          <div class="row ">
+            <div class="col-12 col-md-6">
+              <div class="video-container">
+                <iframe width="560" height="315"   src="https://www.youtube.com/embed/38ISSodmPts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="video-container">
+                <iframe width="560" height="315"   src="https://www.youtube.com/embed/-WRU-QjO9lw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+         </div>
+        </div>
+      </section>
+      <section id="footer">
+        <div class="container">
+          <a href="https://www.facebook.com/profile.php?id=100000380160653" target="_blank"><i class="fab fa-facebook"></i></a>
+          
+        </div>
+        
+
       </section>
     </div>
   </body>
