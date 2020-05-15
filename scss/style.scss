@@ -53,8 +53,6 @@ section#sectiom_info {
   background-color: $color_main;
   .row.form {
     padding: 20px;
-    // border: 2px solid $color_font;
-    // border-radius: 20px;
     min-height: 600px;
     .col-3 {
       padding-right: 0;
@@ -80,7 +78,8 @@ section#sectiom_info {
       font-size: 16px;
       font-weight: 600;
       color: $color_font;
-      .row {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      .row.jp {
         border-bottom: solid 1px $color_hr;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -96,6 +95,41 @@ section#sectiom_info {
           text-align: center;
         }
       }
+      .orderList {
+        margin-top: 20px;
+        margin-bottom: -10px;
+        .order {
+          padding-left: 20px;
+          // margin-right: 10px;
+        }
+        .orderContent {
+          word-break: break-all;
+          padding-right: 10px;
+          padding-left: 10px;
+          width: 90%;
+        }
+
+        .td {
+          text-align: center;
+          letter-spacing: 5px;
+          // background-color: $color_font;
+          color: white;
+          .col-2,
+          .col-3,
+          .col-4 {
+            background-color: $color_font;
+          }
+        }
+        .tr {
+          text-align: center;
+          .tr-text {
+            border-top: 1px solid $color_font;
+          }
+        }
+      }
+      h3 {
+        text-align: center;
+      }
       hr {
         border: solid 1px $color_hr;
       }
@@ -105,7 +139,6 @@ section#sectiom_info {
 
 section#sectiom_mv {
   background-color: $color_font;
-  // height: 500px;
   hr {
     border: solid 1px $color_hr;
   }
@@ -115,9 +148,74 @@ section#sectiom_mv {
       justify-content: center;
       color: $color_main;
       font-weight: 900;
-      h3 {
-        padding-top: 20px;
-        padding-bottom: 50px;
+      .Btn {
+        background-color: $color_main;
+        color: $color_font;
+        font-size: 18px;
+        font-weight: 900;
+        margin-top: 40px;
+        padding: 10px 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          background-color: darken($color_main, 10%);
+          transform: scale(1.1);
+        }
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+      iframe,
+      object,
+      embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+section#sectiom_mv2 {
+  background-color: $color_main;
+  hr {
+    border: solid 1px $color_hr;
+  }
+  .row {
+    &.text {
+      display: flex;
+      justify-content: center;
+      color: $color_font;
+      font-weight: 900;
+      .Btn {
+        background-color: $color_font;
+        color: $color_main;
+        font-size: 18px;
+        font-weight: 900;
+        margin-top: 40px;
+        padding: 10px 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          background-color: darken($color_font, 3%);
+          transform: scale(1.1);
+        }
+        &:active {
+          transform: scale(0.9);
+        }
       }
     }
     .video-container {
@@ -143,10 +241,20 @@ section#footer {
   background-color: $color_hr;
   .container {
     display: flex;
-    justify-content: center;
-    i {
+    flex-direction: column;
+    align-items: center;
+    a {
       color: $color_font;
       font-size: 50px;
+      &:hover {
+        color: darken($color_font, 20%);
+      }
+    }
+    p {
+      color: $color_font;
+      font-weight: 900;
+      margin-top: 10px;
+      letter-spacing: 2px;
     }
   }
 }

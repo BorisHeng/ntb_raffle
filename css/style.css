@@ -90,15 +90,17 @@ section#sectiom_info .row.form .col-8.form {
   font-size: 16px;
   font-weight: 600;
   color: #bb3b0e;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-section#sectiom_info .row.form .col-8.form .row {
+section#sectiom_info .row.form .col-8.form .row.jp {
   border-bottom: solid 1px #f3c623;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-section#sectiom_info .row.form .col-8.form .row .td {
+section#sectiom_info .row.form .col-8.form .row.jp .td {
   font-weight: 900;
   text-align: center;
   letter-spacing: 5px;
@@ -106,8 +108,48 @@ section#sectiom_info .row.form .col-8.form .row .td {
   color: white;
 }
 
-section#sectiom_info .row.form .col-8.form .row .col-2 {
+section#sectiom_info .row.form .col-8.form .row.jp .col-2 {
   border-left: solid 1px #f3c623;
+  text-align: center;
+}
+
+section#sectiom_info .row.form .col-8.form .orderList {
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+section#sectiom_info .row.form .col-8.form .orderList .order {
+  padding-left: 20px;
+}
+
+section#sectiom_info .row.form .col-8.form .orderList .orderContent {
+  word-break: break-all;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 90%;
+}
+
+section#sectiom_info .row.form .col-8.form .orderList .td {
+  text-align: center;
+  letter-spacing: 5px;
+  color: white;
+}
+
+section#sectiom_info .row.form .col-8.form .orderList .td .col-2,
+section#sectiom_info .row.form .col-8.form .orderList .td .col-3,
+section#sectiom_info .row.form .col-8.form .orderList .td .col-4 {
+  background-color: #bb3b0e;
+}
+
+section#sectiom_info .row.form .col-8.form .orderList .tr {
+  text-align: center;
+}
+
+section#sectiom_info .row.form .col-8.form .orderList .tr .tr-text {
+  border-top: 1px solid #bb3b0e;
+}
+
+section#sectiom_info .row.form .col-8.form h3 {
   text-align: center;
 }
 
@@ -134,9 +176,30 @@ section#sectiom_mv .row.text {
   font-weight: 900;
 }
 
-section#sectiom_mv .row.text h3 {
-  padding-top: 20px;
-  padding-bottom: 50px;
+section#sectiom_mv .row.text .Btn {
+  background-color: #faf4ff;
+  color: #bb3b0e;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 40px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section#sectiom_mv .row.text .Btn:hover {
+  background-color: #e3c1ff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section#sectiom_mv .row.text .Btn:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 section#sectiom_mv .row .video-container {
@@ -157,6 +220,69 @@ section#sectiom_mv .row .video-container embed {
   height: 100%;
 }
 
+section#sectiom_mv2 {
+  background-color: #faf4ff;
+}
+
+section#sectiom_mv2 hr {
+  border: solid 1px #f3c623;
+}
+
+section#sectiom_mv2 .row.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #bb3b0e;
+  font-weight: 900;
+}
+
+section#sectiom_mv2 .row.text .Btn {
+  background-color: #bb3b0e;
+  color: #faf4ff;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 40px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section#sectiom_mv2 .row.text .Btn:hover {
+  background-color: #ad370d;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section#sectiom_mv2 .row.text .Btn:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+section#sectiom_mv2 .row .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+section#sectiom_mv2 .row .video-container iframe,
+section#sectiom_mv2 .row .video-container object,
+section#sectiom_mv2 .row .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 section#footer {
   background-color: #f3c623;
 }
@@ -165,12 +291,27 @@ section#footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-section#footer .container i {
+section#footer .container a {
   color: #bb3b0e;
   font-size: 50px;
+}
+
+section#footer .container a:hover {
+  color: #5c1d07;
+}
+
+section#footer .container p {
+  color: #bb3b0e;
+  font-weight: 900;
+  margin-top: 10px;
+  letter-spacing: 2px;
 }
