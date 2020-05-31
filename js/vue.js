@@ -1,3 +1,5 @@
+import { existentialTypeParam } from "babel-types";
+
 $(document).on("click", "a", function (event) {
   let target = $(this).attr("href");
   console.log(target);
@@ -65,14 +67,27 @@ function onYouTubeIframeAPIReady() {
 function onPlayerStateChange1(e) {
   if (e.data == 0) {
     play1 = true;
+    console.log("done");
+    checkUserState();
   }
 }
 function onPlayerStateChange2(e) {
   if (e.data == 0) {
     play2 = true;
+    console.log("done");
+    checkUserState();
+  }
+}
+function checkUserState() {
+  if (play1 && play2) {
+    $(".Btn-1").css({ height: "100%" });
   }
 }
 
-if (play1 && play2) {
-  $(".Btn-1").css("display: block;");
+function openQuestion1(e) {
+  $(".question1").addClass("questionOpen");
+}
+
+function exit(value) {
+  $(".question1").removeClass("questionOpen");
 }
