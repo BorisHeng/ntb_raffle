@@ -3,6 +3,11 @@
   font-family: 微軟正黑體;
 }
 
+body {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
 .navbar-top {
   background-color: #faf4ff;
 }
@@ -47,6 +52,12 @@ header#jumbotron {
   margin-top: 59px;
 }
 
+@media (max-width: 576px) {
+  header#jumbotron {
+    margin-top: 95px;
+  }
+}
+
 header#jumbotron img {
   width: 100%;
 }
@@ -57,108 +68,149 @@ section {
 
 section#sectiom_info {
   background-color: #faf4ff;
+  padding: 50px;
 }
 
-section#sectiom_info .row.form {
-  padding: 20px;
-  min-height: 600px;
+section#sectiom_info ul {
+  margin-left: 20px;
 }
 
-section#sectiom_info .row.form .col-3 {
-  padding-right: 0;
+section#sectiom_info hr {
+  border: solid 1px #f3c623;
 }
 
-section#sectiom_info .row.form .col-3 #v-pills-tab a {
+section#sectiom_info h3 {
+  text-align: center;
+}
+
+section#sectiom_info h3,
+section#sectiom_info h4 {
+  font-weight: 900;
+}
+
+section#sectiom_info a.nav-link {
   color: #bb3b0e;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
-  border-radius: 20px 0 0 15px;
+  border-radius: 10px 10px 0 0;
+  font-weight: 800;
+  padding: 12px 30px 12px 30px;
+}
+
+section#sectiom_info a.nav-link.active {
+  color: #faf4ff;
+  background-color: #bb3b0e;
+}
+
+section#sectiom_info .row.jp {
   font-weight: 800;
 }
 
-section#sectiom_info .row.form .col-3 #v-pills-tab a.active {
-  background-color: #bb3b0e !important;
-  color: white;
+section#sectiom_info .row.jp .td {
+  background-color: #bb3b0e;
+  color: #faf4ff;
+  text-align: center;
 }
 
-section#sectiom_info .row.form .col-8.form {
+section#sectiom_info .row.jp .prize,
+section#sectiom_info .row.jp .num {
+  padding: 10px 0 10px 0;
+  border-top: #f3c623 solid 1px;
+}
+
+section#sectiom_info .row.jp .num {
+  text-align: center;
+  border-left: #f3c623 solid 1px;
+}
+
+section#sectiom_info .tab-content {
+  color: #bb3b0e;
   border: 5px solid #bb3b0e;
   border-radius: 20px;
   padding: 30px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #bb3b0e;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-section#sectiom_info .row.form .col-8.form .row.jp {
-  border-bottom: solid 1px #f3c623;
-  padding-top: 10px;
-  padding-bottom: 10px;
+section#sectiom_info .tab-content .row.orderList {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 20px 0 20px;
 }
 
-section#sectiom_info .row.form .col-8.form .row.jp .td {
-  font-weight: 900;
-  text-align: center;
-  letter-spacing: 5px;
-  background-color: #bb3b0e;
-  color: white;
+section#sectiom_info .tab-content .row.orderList .order {
+  width: 100%;
 }
 
-section#sectiom_info .row.form .col-8.form .row.jp .col-2 {
-  border-left: solid 1px #f3c623;
-  text-align: center;
-}
-
-section#sectiom_info .row.form .col-8.form .orderList {
-  margin-top: 20px;
-  margin-bottom: -10px;
-}
-
-section#sectiom_info .row.form .col-8.form .orderList .order {
+section#sectiom_info .tab-content .row.orderList .orderContent {
   padding-left: 20px;
 }
 
-section#sectiom_info .row.form .col-8.form .orderList .orderContent {
-  word-break: break-all;
-  padding-right: 10px;
-  padding-left: 10px;
-  width: 90%;
+section#sectiom_info .tab-content .row.orderList .tdContent {
+  width: 100%;
+  padding: 0 10% 0 10%;
 }
 
-section#sectiom_info .row.form .col-8.form .orderList .td {
+section#sectiom_info .tab-content .row.orderList .tdContent .td,
+section#sectiom_info .tab-content .row.orderList .tdContent .tr {
   text-align: center;
-  letter-spacing: 5px;
-  color: white;
 }
 
-section#sectiom_info .row.form .col-8.form .orderList .td .col-2,
-section#sectiom_info .row.form .col-8.form .orderList .td .col-3,
-section#sectiom_info .row.form .col-8.form .orderList .td .col-4 {
+section#sectiom_info .tab-content .row.orderList .tdContent .td {
+  text-align: center;
   background-color: #bb3b0e;
+  color: #faf4ff;
 }
 
-section#sectiom_info .row.form .col-8.form .orderList .tr {
-  text-align: center;
+section#sectiom_info .tab-content .row.orderList .tdContent .tr .tr-text {
+  border-top: 1px #bb3b0e solid;
 }
 
-section#sectiom_info .row.form .col-8.form .orderList .tr .tr-text {
-  border-top: 1px solid #bb3b0e;
-}
-
-section#sectiom_info .row.form .col-8.form h3 {
-  text-align: center;
-}
-
-section#sectiom_info .row.form .col-8.form hr {
-  border: solid 1px #f3c623;
+@media (max-width: 576px) {
+  section#sectiom_info {
+    padding: 0;
+  }
+  section#sectiom_info ul {
+    margin-top: 20px;
+  }
+  section#sectiom_info a.nav-link {
+    padding: 8px 12px 8px 12px;
+    font-size: 18px;
+  }
+  section#sectiom_info .tab-content {
+    border: 2px solid #bb3b0e;
+    margin-bottom: 20px;
+  }
+  section#sectiom_info .tab-content .orderContent {
+    padding-left: 0;
+  }
+  section#sectiom_info .tab-content .tdContent {
+    width: 100%;
+    padding: 0;
+    font-size: 16px;
+  }
+  section#sectiom_info .tab-content .tdContent .td,
+  section#sectiom_info .tab-content .tdContent .tr {
+    text-align: center;
+  }
+  section#sectiom_info .tab-content .tdContent .td {
+    text-align: center;
+    background-color: #bb3b0e;
+    color: #faf4ff;
+  }
+  section#sectiom_info .tab-content .tdContent .tr .tr-text {
+    border-top: 1px #bb3b0e solid;
+  }
 }
 
 section#sectiom_mv {
   background-color: #bb3b0e;
+}
+
+section#sectiom_mv .Btn {
+  border: #f3c623 1px solid;
 }
 
 section#sectiom_mv hr {
@@ -224,6 +276,10 @@ section#sectiom_mv2 {
   background-color: #faf4ff;
 }
 
+section#sectiom_mv2 .Btn {
+  border: #f3c623 1px solid;
+}
+
 section#sectiom_mv2 hr {
   border: solid 1px #f3c623;
 }
@@ -281,6 +337,10 @@ section#sectiom_mv2 .row .video-container embed {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.Btn-1 {
+  display: none;
 }
 
 section#footer {

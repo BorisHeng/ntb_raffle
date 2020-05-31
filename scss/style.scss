@@ -6,6 +6,10 @@ $color_font: #bb3b0e;
 * {
   font-family: 微軟正黑體;
 }
+body {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
 
 .navbar-top {
   background-color: $color_main;
@@ -40,6 +44,9 @@ header#jumbotron {
   padding: 0;
   height: 100%;
   margin-top: 59px;
+  @media (max-width: 576px) {
+    margin-top: 95px;
+  }
   img {
     width: 100%;
   }
@@ -51,93 +58,125 @@ section {
 
 section#sectiom_info {
   background-color: $color_main;
-  .row.form {
-    padding: 20px;
-    min-height: 600px;
-    .col-3 {
-      padding-right: 0;
-      #v-pills-tab {
-        a {
-          color: $color_font;
-          transition: 0.5s;
-          font-size: 18px;
+  padding: 50px;
+  ul {
+    margin-left: 20px;
+  }
+  hr {
+    border: solid 1px $color_hr;
+  }
+  h3 {
+    text-align: center;
+  }
+  h3,
+  h4 {
+    font-weight: 900;
+  }
+  a.nav-link {
+    color: $color_font;
+    transition: 0.5s;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    font-weight: 800;
+    padding: 12px 30px 12px 30px;
+    &.active {
+      color: $color_main;
+      background-color: $color_font;
+    }
+  }
+  .row.jp {
+    font-weight: 800;
+    .td {
+      background-color: $color_font;
+      color: $color_main;
+      text-align: center;
+    }
+    .prize,
+    .num {
+      padding: 10px 0 10px 0;
+      border-top: $color_hr solid 1px;
+    }
+    .num {
+      text-align: center;
+      border-left: $color_hr solid 1px;
+    }
+  }
+  .tab-content {
+    color: $color_font;
+    border: 5px solid $color_font;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    .row.orderList {
+      font-size: 18px;
+      font-weight: 600;
+      padding: 0 20px 0 20px;
+      .order {
+        width: 100%;
+      }
+      .orderContent {
+        padding-left: 20px;
+      }
+      .tdContent {
+        width: 100%;
+        padding: 0 10% 0 10%;
+        .td,
+        .tr {
           text-align: center;
-          border-radius: 20px 0 0 15px;
-          font-weight: 800;
         }
-        a.active {
-          background-color: $color_font !important;
-          color: white;
+        .td {
+          text-align: center;
+          background-color: $color_font;
+          color: $color_main;
+        }
+        .tr .tr-text {
+          border-top: 1px $color_font solid;
         }
       }
     }
-    .col-8.form {
-      border: 5px solid $color_font;
-      border-radius: 20px;
-      padding: 30px;
-      font-size: 16px;
-      font-weight: 600;
-      color: $color_font;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-      .row.jp {
-        border-bottom: solid 1px $color_hr;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        .td {
-          font-weight: 900;
-          text-align: center;
-          letter-spacing: 5px;
-          background-color: $color_font;
-          color: white;
-        }
-        .col-2 {
-          border-left: solid 1px $color_hr;
-          text-align: center;
-        }
-      }
-      .orderList {
-        margin-top: 20px;
-        margin-bottom: -10px;
-        .order {
-          padding-left: 20px;
-          // margin-right: 10px;
-        }
-        .orderContent {
-          word-break: break-all;
-          padding-right: 10px;
-          padding-left: 10px;
-          width: 90%;
-        }
+  }
 
-        .td {
-          text-align: center;
-          letter-spacing: 5px;
-          // background-color: $color_font;
-          color: white;
-          .col-2,
-          .col-3,
-          .col-4 {
-            background-color: $color_font;
-          }
-        }
+  @media (max-width: 576px) {
+    padding: 0;
+    ul {
+      margin-top: 20px;
+    }
+    a.nav-link {
+      padding: 8px 12px 8px 12px;
+      font-size: 18px;
+    }
+    .tab-content {
+      border: 2px solid $color_font;
+      margin-bottom: 20px;
+      .orderContent {
+        padding-left: 0;
+      }
+      .tdContent {
+        width: 100%;
+        padding: 0;
+        font-size: 16px;
+        .td,
         .tr {
           text-align: center;
-          .tr-text {
-            border-top: 1px solid $color_font;
-          }
         }
-      }
-      h3 {
-        text-align: center;
-      }
-      hr {
-        border: solid 1px $color_hr;
+        .td {
+          text-align: center;
+          background-color: $color_font;
+          color: $color_main;
+        }
+        .tr .tr-text {
+          border-top: 1px $color_font solid;
+        }
       }
     }
   }
 }
 
 section#sectiom_mv {
+  .Btn {
+    border: $color_hr 1px solid;
+  }
   background-color: $color_font;
   hr {
     border: solid 1px $color_hr;
@@ -189,6 +228,9 @@ section#sectiom_mv {
 
 section#sectiom_mv2 {
   background-color: $color_main;
+  .Btn {
+    border: $color_hr 1px solid;
+  }
   hr {
     border: solid 1px $color_hr;
   }
@@ -235,6 +277,9 @@ section#sectiom_mv2 {
       }
     }
   }
+}
+.Btn-1 {
+  display: none;
 }
 
 section#footer {

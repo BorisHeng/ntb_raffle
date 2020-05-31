@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700&amp;display=swap"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script async src="//www.youtube.com/iframe_api"></script>
   
   </head>
 
@@ -49,290 +50,292 @@
         <img src="./img/main.jpg" alt="" />
       </header>
       <section id="sectiom_info">
-        <!-- <div class="container"> -->
-          <div class="row form">
-            <div class="col-3">
-              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <br>
-                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">活動辦法</a>
-                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">活動獎項</a>
-                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">得獎公告</a>
-                <!-- <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">第三梯次</a> -->
+        <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">活動辦法</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">活動獎項</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">得獎公告</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="row orderList">
+              <div class=" order">
+                <p >一、</p>
+              </div>
+              <div class="  orderContent">
+                <p >一般民眾皆可參與。</p>
               </div>
             </div>
-            <div class="col-8 form">
-              <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                  <div class="row orderList">
-                    <div class=" order">
-                      <p >一、</p>
-                    </div>
-                    <div class="  orderContent">
-                      <p >一般民眾皆可參與</p>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row orderList">
-                    <div class=" order">
-                      <p >二、</p>
-                    </div>
-                    <div class="  orderContent">
-                      <p >活動分為三梯次，每梯次皆有【廉政】、【稅務】類短片各一支，觀看完各梯次影片後即可進入該梯次答題區答題</p>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row orderList">
-                    <div class=" order">
-                      <p >三、</p>
-                    </div>
-                    <div class="  orderContent">
-                      <p >答題正確即可獲得該梯次抽獎資格一次，每人每一梯次僅限一次抽獎機會，第二、第三梯次以此類推；故每人最多有三次抽獎機會，不同梯次不會跨梯次抽獎</p>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row orderList">
-                    <div class=" order">
-                      <p >四、</p>
-                    </div>
-                    <div class="  orderContent">
-                      <p >資料登入須填寫姓名、居住地、身份證字號、手機號碼、email帳號，以利聯繫及確認身分不重複，中獎者於領獎時所提供的資料需與此相同</p>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row orderList">
-                    <div class=" order">
-                      <p >五、</p>
-                    </div>
-                    <div class="  orderContent">
-                      <p >承上，若遇資料不相同、填寫不完整或錯誤，造成執行單位無法判斷、聯繫、確認身分時，一概以棄權論</p>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row orderList">
-                    <div class=" order">
-                      <p >六、</p>
-                    </div>
-                    <div class="  orderContent">
-                      <p >主辦單位保有隨時修改及終止本活動之權利</p>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row orderList ">
-                    <div class=" order">
-                      <p >七、</p>
-                    </div>
-                    <div class="  orderContent ">
-                      <div class="row justify-content-center td">
-                        <div class="col-2">梯次</div>
-                        <div class="col-3">活動時間</div>
-                        <div class="col-4">抽獎及公告</div>
-                      </div>
-                      <div class="row justify-content-center tr">
-                        <div class="col-2">第一梯次</div>
-                        <div class="col-3">6/19~7/10</div>
-                        <div class="col-4"></div>
-                      </div>
-                      <div class="row justify-content-center tr">
-                        <div class="col-2 tr-text">第二梯次</div>
-                        <div class="col-3 tr-text">7/3~7/24</div>
-                        <div class="col-4">8/13~8/19其中一日</div>
-                      </div>
-                      <div class="row justify-content-center tr">
-                        <div class="col-2 tr-text">第三梯次</div>
-                        <div class="col-3 tr-text">7/17~8/7</div>
-                        <div class="col-4"></div>
-                      </div>
-                      
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row orderList">
-                    <div class=" order">
-                      <p >八、</p>
-                    </div>
-                    <div class="  orderContent">
-                      <p >個資宣告:財政部高雄國稅局為辦理「109年度統一發票推行租稅宣導活動」因活動需求所獲得之個人資料，包含姓名、身分證字號、出生日期、電話、E-MAIL、住址等，基於政令宣導之特地目的及辦理本活動之合理範疇內蒐集、處理、傳遞、聯絡、中獎申報之使用，不另做其他用途；如欲參加本活動即表示同意此宣告事項，如不同意，請勿參加，謝謝。
-                      </p>
-                    </div>
-                  </div>
-                  <hr>
+            <hr>
+            <div class="row orderList">
+              <div class=" order">
+                <p >二、</p>
+              </div>
+              <div class="  orderContent">
+                <p >活動分為三梯次，每梯次皆有【廉政】、【稅務】類短片各一支，觀看完各梯次影片後即可進入該梯次答題區答題。</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row orderList">
+              <div class=" order">
+                <p >三、</p>
+              </div>
+              <div class="  orderContent">
+                <p >答題正確即可獲得該梯次抽獎資格一次，每人每一梯次僅限一次抽獎機會，第二、第三梯次以此類推；故每人最多有三次抽獎機會，不同梯次不會跨梯次抽獎。</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row orderList">
+              <div class=" order">
+                <p >四、</p>
+              </div>
+              <div class="  orderContent">
+                <p >資料登入須填寫姓名、居住地、身份證字號、手機號碼、email帳號，以利聯繫及確認身分不重複，中獎者於領獎時所提供的資料需與此相同。</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row orderList">
+              <div class=" order">
+                <p >五、</p>
+              </div>
+              <div class="orderContent">
+                <p >承上，若遇資料不相同、填寫不完整或錯誤，造成執行單位無法判斷、聯繫、確認身分時，一概以棄權論。</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row orderList">
+              <div class=" order">
+                <p >六、</p>
+              </div>
+              <div class="orderContent">
+                <p >主辦單位保有隨時修改及終止本活動之權利。</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row orderList ">
+              <div class=" order">
+                <p >七、</p>
+              </div>
+              <div class="orderContent tdContent">
+                <div class="row td">
+                  <div class="col-1 offset-md-2 col-md-2">梯次</div>
+                  <div class="col-6 col-md-3">活動時間</div>
+                  <div class="col-4 col-md-4">抽獎及公告</div>
                 </div>
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                  <h3>第一梯次(6/19~7/10)</h3>
-                  <br>
-                  <div class="row jp">
-                    <div class="col-10 td">獎項內容</div>
-                    <div class="col-2 td">名額</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【頭獎】SAMPO路徑導航掃地機器人</div>
-                    <div class="col-2">1</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【二獎】Airpods 2nd</div>
-                    <div class="col-2">1</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【三獎】歐樂B 3D電動牙刷+專業美白刷頭</div>
-                    <div class="col-2">2</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【四獎】未來實驗室2L渦輪氣炸鍋</div>
-                    <div class="col-2">2</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【五獎】未來實驗室N6負離子空氣清淨機(二人組)</div>
-                    <div class="col-2">4</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【六獎】小米手環4</div>
-                    <div class="col-2">3</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【七獎】華納威秀電影票(2張)</div>
-                    <div class="col-2">3</div>
-                  </div>
-                  <br>
-                  <br>
-                  <h3>第二梯次(7/3~7/24)</h3>
-                  <br>
-                  <div class="row jp">
-                    <div class="col-10 td">獎項內容</div>
-                    <div class="col-2 td">名額</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【頭獎】ipad mini 5th WI-FI 64GB人</div>
-                    <div class="col-2">1</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【二獎】Switch Lite主-藍NS Lite</div>
-                    <div class="col-2">1</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【三獎】歐樂B 3D電動牙刷+專業美白刷頭</div>
-                    <div class="col-2">2</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【四獎】未來實驗室2L渦輪氣炸鍋</div>
-                    <div class="col-2">2</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【五獎】未來實驗室N6負離子空氣清淨機(二人組)</div>
-                    <div class="col-2">4</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【六獎】小米手環4</div>
-                    <div class="col-2">3</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【七獎】華納威秀電影票(2張)</div>
-                    <div class="col-2">3</div>
-                  </div>
-                  <br>
-                  <br>
-                  <h3>第三梯次(7/17~8/7)</h3>
-                  <br>
-                  <div class="row jp">
-                    <div class="col-10 td">獎項內容</div>
-                    <div class="col-2 td">名額</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【頭獎】AW S5 GPS44 灰鋁/黑運動錶帶人</div>
-                    <div class="col-2">1</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【二獎】Switch Lite主-藍NS Lite</div>
-                    <div class="col-2">1</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【三獎】歐樂B 3D電動牙刷+專業美白刷頭</div>
-                    <div class="col-2">2</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【四獎】未來實驗室2L渦輪氣炸鍋</div>
-                    <div class="col-2">2</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【五獎】未來實驗室N6負離子空氣清淨機(二人組)</div>
-                    <div class="col-2">4</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【六獎】小米手環4</div>
-                    <div class="col-2">3</div>
-                  </div>
-                  <div class="row jp">
-                    <div class="col-10">【七獎】華納威秀電影票(2張)</div>
-                    <div class="col-2">3</div>
-                  </div>
+                <div class="row tr">
+                  <div class="col-1 offset-md-2 col-md-2">第一梯次</div>
+                  <div class="col-6 col-md-3">6/20~7/12</div>
+                  <div class="col-4 col-md-4"></div>
                 </div>
-                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                  <h3>將於109/?/? 於「高雄國稅局-稅務e達人」粉專直播抽獎
-                    敬請期待，祝您中獎
-                    </h3>
-                    <hr>
-                    <div class="row orderList">
-                      <div class=" order">
-                        <p >一、</p>
-                      </div>
-                      <div class="  orderContent">
-                        <p >於8/13~8/19其中一日於【高雄國稅局-稅務e達人】粉絲專頁直播抽獎過程並公布中獎名單。</p>
-                      </div>
-                    </div>
-                    <div class="row orderList">
-                      <div class=" order">
-                        <p >二、</p>
-                      </div>
-                      <div class="  orderContent">
-                        <p >抽獎完成後3日內執行單位將以手機簡訊通知所有中獎者，中獎者須於9/4前完成領獎填寫並以紙本郵寄或傳真方式將領據寄送至執行單位。</p>
-                        <p>傳真:07-9550608</p>
-                        <p>地址:80253高雄市苓雅區光華一路206號10樓之7  廖小姐收</p>
-                      </div>
-                    </div>
-                    <div class="row orderList">
-                      <div class=" order">
-                        <p >三、</p>
-                      </div>
-                      <div class="  orderContent">
-                        <p >若9/4前未回傳領據者、領據資料填寫不正確，而未於9/4前完成修改或補件者，一併視同放棄領獎資格。</p>
-                      </div>
-                    </div>
-                    <div class="row orderList">
-                      <div class=" order">
-                        <p >四、</p>
-                      </div>
-                      <div class="  orderContent">
-                        <p >執行單位收到中獎者領據後，將於109/9/25前寄送獎品，若遇地址填寫錯誤、收件者未如期領取包裹而被退件…等包裹無法順利投遞之情形，而需執行單位二次投遞包裹時，郵資費用需由中獎者自行負擔。</p>
-                      </div>
-                    </div>
-                    <div class="row orderList">
-                      <div class=" order">
-                        <p >五、</p>
-                      </div>
-                      <div class="  orderContent">
-                        <p >各獎項照片僅提供參考，皆以實物為主，恕不挑款、挑色或折讓現金。</p>
-                      </div>
-                    </div>
-                    <div class="row orderList">
-                      <div class=" order">
-                        <p >六、</p>
-                      </div>
-                      <div class="  orderContent">
-                        <p >各獎項價格以實際採購為主，並依法申報。</p>
-                      </div>
-                    </div>
-                    <div class="row orderList">
-                      <div class=" order">
-                        <p >七、</p>
-                      </div>
-                      <div class="  orderContent">
-                        <p >個人資料保護告知聲明:中獎者須同意主辦單位公開公布中獎人姓名(其中一字以0隱碼顯示)、居住地、手機號碼(前5碼以0引碼顯示)。</p>
-                      </div>
-                    </div>
-
+                <div class="row tr">
+                  <div class="col-1 offset-md-2 col-md-2 tr-text">第二梯次</div>
+                  <div class="col-6 col-md-3 tr-text">7/6~7/26</div>
+                  <div class="col-4 col-md-4">8/13~8/19其中一日</div>
                 </div>
-                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                  
+                <div class="row tr">
+                  <div class="col-1 offset-md-2 col-md-2 tr-text">第三梯次</div>
+                  <div class="col-6 col-md-3 tr-text">7/20~8/9W</div>
+                  <div class="col-4 col-md-4"></div>
                 </div>
+                
+              </div>
+            </div>
+            <hr>
+            <div class="row orderList">
+              <div class=" order">
+                <p >八、</p>
+              </div>
+              <div class="  orderContent">
+                <p >個資宣告:財政部高雄國稅局為辦理「109年度統一發票推行租稅宣導活動」因活動需求所獲得之個人資料，包含姓名、身分證字號、出生日期、電話、E-MAIL、住址等，基於政令宣導之特地目的及辦理本活動之合理範疇內蒐集、處理、傳遞、聯絡、中獎申報之使用，不另做其他用途；如欲參加本活動即表示同意此宣告事項，如不同意，請勿參加，謝謝。
+                </p>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="container">
+            <h3>第一梯次</h3>
+                  <br>
+                  <div class="row jp">
+                    <div class="col-10 prize td">獎項內容</div>
+                    <div class="col-2 num td">名額</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【頭獎】SAMPO路徑導航掃地機器人</div>
+                    <div class="col-2 num">1</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【二獎】Airpods 2nd</div>
+                    <div class="col-2 num">1</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【三獎】歐樂B 3D電動牙刷+專業美白刷頭</div>
+                    <div class="col-2 num">2</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【四獎】未來實驗室2L渦輪氣炸鍋</div>
+                    <div class="col-2 num">2</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【五獎】未來實驗室N6負離子空氣清淨機</div>
+                    <div class="col-2 num">4</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【六獎】小米手環4</div>
+                    <div class="col-2 num">3</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【七獎】華納威秀電影票(2張)</div>
+                    <div class="col-2 num">3</div>
+                  </div>
+                  <br>
+                  <br>
+                  <h3>第二梯次</h3>
+                  <br>
+                  <div class="row jp">
+                    <div class="col-10 prize td">獎項內容</div>
+                    <div class="col-2 num td">名額</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【頭獎】ipad mini 5th WI-FI 64GB</div>
+                    <div class="col-2 num">1</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【二獎】Switch Lite主-藍NS Lite</div>
+                    <div class="col-2 num">1</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【三獎】歐樂B 3D電動牙刷+專業美白刷頭</div>
+                    <div class="col-2 num">2</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【四獎】未來實驗室2L渦輪氣炸鍋</div>
+                    <div class="col-2 num">2</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【五獎】未來實驗室N6負離子空氣清淨機</div>
+                    <div class="col-2 num">4</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【六獎】小米手環4</div>
+                    <div class="col-2 num">3</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【七獎】華納威秀電影票(2張)</div>
+                    <div class="col-2 num">3</div>
+                  </div>
+                  <br>
+                  <br>
+                  <h3>第三梯次</h3>
+                  <br>
+                  <div class="row jp">
+                    <div class="col-10 prize td">獎項內容</div>
+                    <div class="col-2 num td">名額</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【頭獎】AW S5 GPS44 灰鋁/黑運動錶帶</div>
+                    <div class="col-2 num">1</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【二獎】Switch Lite主-藍NS Lite</div>
+                    <div class="col-2 num">1</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【三獎】歐樂B 3D電動牙刷+專業美白刷頭</div>
+                    <div class="col-2 num">2</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【四獎】未來實驗室2L渦輪氣炸鍋</div>
+                    <div class="col-2 num">2</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【五獎】未來實驗室N6負離子空氣清淨機</div>
+                    <div class="col-2 num">4</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【六獎】小米手環4</div>
+                    <div class="col-2 num">3</div>
+                  </div>
+                  <div class="row jp">
+                    <div class="col-10 prize">【七獎】華納威秀電影票(2張)</div>
+                    <div class="col-2 num">3</div>
+                  </div>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <h3>
+            敬請期待，祝您中獎
+            </h3>
+            <hr>
+            <div class="row orderList">
+              <div class="order">
+                <h4>領獎注意事項：</h4>
+              </div>
+            </div>
+            <div class="row orderList">
+              <div class=" order">
+                <p >一、</p>
+              </div>
+              <div class="  orderContent">
+                <p >於8/13~8/19其中一日於【高雄國稅局-稅務e達人】粉絲專頁直播抽獎過程並公布中獎名單。</p>
+              </div>
+            </div>
+            <div class="row orderList">
+              <div class=" order">
+                <p >二、</p>
+              </div>
+              <div class="  orderContent">
+                <p >抽獎完成後3日內執行單位將以手機簡訊通知所有中獎者，中獎者須於9/4前完成領獎填寫並以紙本郵寄或傳真方式將領據寄送至執行單位。</p>
+                <p>傳真:07-9550608</p>
+                <p>地址:80253高雄市苓雅區光華一路206號10樓之7  廖小姐收</p>
+              </div>
+            </div>
+            <div class="row orderList">
+              <div class=" order">
+                <p >三、</p>
+              </div>
+              <div class="  orderContent">
+                <p >若9/4前未回傳領據者、領據資料填寫不正確，而未於9/4前完成修改或補件者，一併視同放棄領獎資格。</p>
+              </div>
+            </div>
+            <div class="row orderList">
+              <div class=" order">
+                <p >四、</p>
+              </div>
+              <div class="  orderContent">
+                <p >執行單位收到中獎者領據後，將於109/9/25前寄送獎品，若遇地址填寫錯誤、收件者未如期領取包裹而被退件…等包裹無法順利投遞之情形，而需執行單位二次投遞包裹時，郵資費用需由中獎者自行負擔。</p>
+              </div>
+            </div>
+            <div class="row orderList">
+              <div class=" order">
+                <p >五、</p>
+              </div>
+              <div class="  orderContent">
+                <p >各獎項皆以實物為主，恕不挑款、挑色或折讓現金。</p>
+              </div>
+            </div>
+            <div class="row orderList">
+              <div class=" order">
+                <p >六、</p>
+              </div>
+              <div class="  orderContent">
+                <p >各獎項價格以實際採購為主，並依法申報。</p>
+              </div>
+            </div>
+            <div class="row orderList">
+              <div class=" order">
+                <p >七、</p>
+              </div>
+              <div class="  orderContent">
+                <p >個人資料保護告知聲明:中獎者須同意主辦單位公開公布中獎人姓名(其中一字以0隱碼顯示)、居住地、手機號碼(前5碼以0隱碼顯示)。</p>
+              </div>
+            </div></div>
+        </div>
                 </div>
               </div>
             </div>
@@ -349,17 +352,17 @@
           <div class="row ">
             <div class="col-12 col-md-6">
               <div class="video-container">
-                <iframe width="560" height="315"   src="https://www.youtube.com/embed/38ISSodmPts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="YouTubeVideoPlayerAPI1"></div>
               </div>
             </div>
             <div class="col-12 col-md-6">
               <div class="video-container">
-                <iframe width="560" height="315"   src="https://www.youtube.com/embed/38ISSodmPts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="YouTubeVideoPlayerAPI2"></div>
               </div>
             </div>
          </div>
          <div class="row text">
-          <button class="Btn">點我作答</button>
+          <button class="Btn Btn-1">點我作答</button>
          </div>
         </div>
       </section>
@@ -414,7 +417,9 @@
           <div class="row"><a href="https://www.facebook.com/ntak.gov/?epa=SEARCH_BOX" target="_blank"><i class="fab fa-facebook"></i></a></div>
           <div class="row"><p>主辦單位:財政部高雄國稅局
           </p></div>
-          <div class="row"><p>洽詢專線:07-9551219 廖小姐 (上午10:00~下午6:00)
+          <div class="row"><p>洽詢專線:07-9551219
+          </p></div>
+          <div class="row"><p>廖小姐 (上午10:00~下午6:00)
           </p></div>
         </div>
         
@@ -436,7 +441,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://kit.fontawesome.com/b8bed8677a.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
   </body>
   <script type="text/javascript" src="./js/vue.js"></script>
 </html>
