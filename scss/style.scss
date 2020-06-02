@@ -11,6 +11,11 @@ body {
   -webkit-user-select: none;
 }
 
+#app {
+  position: relative;
+  overflow: hidden;
+}
+
 .navbar-top {
   background-color: $color_main;
   a {
@@ -306,43 +311,111 @@ section#footer {
   }
 }
 
-.question1 {
+.menu {
   color: $color_font;
-  position: fixed;
+  position: absolute;
   z-index: 9999;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
-  height: 100%;
   background-color: rgb(56, 54, 54);
   transition: 0.5s;
   opacity: 0;
   pointer-events: none;
-  &.questionOpen {
+  padding-top: 100px;
+  &.menuOpen {
     opacity: 1;
     pointer-events: initial;
   }
+  &#finished {
+    text-align: center;
+    font-weight: 900;
+    input {
+      width: 100%;
+      border: $color_hr solid 2px;
+      border-radius: 20px;
+      text-align: center;
+      padding: 10px 0 10px 0;
+      margin-bottom: 30px;
+    }
+  }
   .exit {
-    position: fixed;
+    position: absolute;
     right: 100px;
-    top: 100px;
+    top: 30px;
     font-size: 36px;
     padding: 0 12px 0 12px;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.5s;
+    background-color: $color_font;
+    color: darken($color_main, 5%);
     &:hover {
-      background-color: $color_font;
       color: $color_main;
     }
   }
   .container {
     background-color: $color_main;
     border: 3px solid $color_font;
-    height: 500px;
     border-radius: 20px;
+    padding: 50px;
+    h3 {
+      margin-bottom: 20px;
+    }
+    label {
+      padding-right: 20px;
+      font-size: 18px;
+    }
+    form {
+      width: 100%;
+    }
+    p {
+      color: $color_main;
+      font-size: 18px;
+      padding-left: 10px;
+      font-weight: 900;
+      background-color: #d92027;
+      width: 100%;
+    }
+    .btn {
+      display: flex;
+      justify-content: center;
+      .button {
+        background-color: $color_font;
+        color: $color_main;
+        font-size: 18px;
+        font-weight: 900;
+        margin-top: 40px;
+        padding: 10px 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        border: solid 1px $color_hr;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          background-color: darken($color_font, 10%);
+          transform: scale(1.1);
+        }
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    padding: 0;
+    .exit {
+      right: 50px;
+    }
+    .container {
+      padding-top: 100px;
+      h3 {
+        font-size: 20px;
+        font-weight: 900;
+      }
+    }
   }
 }

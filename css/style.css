@@ -8,6 +8,11 @@ body {
   -webkit-user-select: none;
 }
 
+#app {
+  position: relative;
+  overflow: hidden;
+}
+
 .navbar-top {
   background-color: #faf4ff;
 }
@@ -379,9 +384,9 @@ section#footer .container p {
   letter-spacing: 2px;
 }
 
-.question1 {
+.menu {
   color: #bb3b0e;
-  position: fixed;
+  position: absolute;
   z-index: 9999;
   top: 0;
   left: 0;
@@ -391,43 +396,132 @@ section#footer .container p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
-  height: 100%;
   background-color: #383636;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0;
   pointer-events: none;
+  padding-top: 100px;
 }
 
-.question1.questionOpen {
+.menu.menuOpen {
   opacity: 1;
   pointer-events: initial;
 }
 
-.question1 .exit {
-  position: fixed;
+.menu#finished {
+  text-align: center;
+  font-weight: 900;
+}
+
+.menu#finished input {
+  width: 100%;
+  border: #f3c623 solid 2px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  margin-bottom: 30px;
+}
+
+.menu .exit {
+  position: absolute;
   right: 100px;
-  top: 100px;
+  top: 30px;
   font-size: 36px;
   padding: 0 12px 0 12px;
   border-radius: 50%;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background-color: #bb3b0e;
+  color: #eedbff;
 }
 
-.question1 .exit:hover {
-  background-color: #bb3b0e;
+.menu .exit:hover {
   color: #faf4ff;
 }
 
-.question1 .container {
+.menu .container {
   background-color: #faf4ff;
   border: 3px solid #bb3b0e;
-  height: 500px;
   border-radius: 20px;
+  padding: 50px;
+}
+
+.menu .container h3 {
+  margin-bottom: 20px;
+}
+
+.menu .container label {
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+.menu .container form {
+  width: 100%;
+}
+
+.menu .container p {
+  color: #faf4ff;
+  font-size: 18px;
+  padding-left: 10px;
+  font-weight: 900;
+  background-color: #d92027;
+  width: 100%;
+}
+
+.menu .container .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .container .btn .button {
+  background-color: #bb3b0e;
+  color: #faf4ff;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 40px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border: solid 1px #f3c623;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu .container .btn .button:hover {
+  background-color: #8c2c0a;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.menu .container .btn .button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media (max-width: 576px) {
+  .menu {
+    padding: 0;
+  }
+  .menu .exit {
+    right: 50px;
+  }
+  .menu .container {
+    padding-top: 100px;
+  }
+  .menu .container h3 {
+    font-size: 20px;
+    font-weight: 900;
+  }
 }
